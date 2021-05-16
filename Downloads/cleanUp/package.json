@@ -1,0 +1,33 @@
+{
+  "name": "pipedrivetest",
+  "version": "1.0.0",
+  "description": "",
+  "main": "test.js",
+  "scripts": {
+    "deal": "node --max-old-space-size=16384 src/cleanDeal.js",
+    "email": "node --max-old-space-size=16384 src/cleanAllEmail.js",
+    "setHS": "node --max-old-space-size=50000 src/setHS.js",
+    "setDD": "node --max-old-space-size=50000 src/setDD.js",
+    "importTP": "node --max-old-space-size=50000 src/setTeamPImport.js",
+    "compareHStoDD": "node --max-old-space-size=50000 src/compareHStoDD.js",
+    "compareDDtoList": "node --max-old-space-size=50000 src/compareDDtoList.js",
+    "compareHStoTP": "node --max-old-space-size=50000 src/compareHStoTP.js",
+    "combineFiles": "node --max-old-space-size=50000 src/combineFiles.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chai": "^4.2.0",
+    "csv-parser": "^2.3.5",
+    "csv-writer": "^1.6.0",
+    "hubspot": "^2.3.14",
+    "lodash": "^4.17.20",
+    "luxon": "^1.24.1",
+    "pipedrive": "^10.4.3",
+    "server-accepts-email": "^1.11.1",
+    "strip-bom-stream": "^4.0.0"
+  },
+  "devDependencies": {
+    "mocha": "^8.1.0"
+  }
+}
